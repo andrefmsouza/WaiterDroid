@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvProdNomeCarrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Nome"
+        android:textSize="25dp" />
+    
+    <TextView
+        android:id="@+id/tvProdPrecoCarrinho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProdNomeCarrinho"
+        android:text="Preço:"
+        android:textSize="15dp" />
+    
+    <TextView
+        android:id="@+id/tvQuantProdCarrinho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvProdPrecoCarrinho"
+        android:text="Quantidade:"
+        android:textSize="15dp" />
+    
+    <TextView
+        android:id="@+id/tvDescProdCarrinho"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="15dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvProdNumCarrinho"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

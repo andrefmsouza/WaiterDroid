@@ -1,0 +1,90 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andre.waiterdroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.andre.activitys.Main"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andre.activitys.MenuProd"
+            android:label="@string/title_activity_menuprod" >
+            <intent-filter>
+                <action android:name="MenuProd" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andre.activitys.Pedido"
+            android:label="@string/title_activity_pedido" >
+            <intent-filter>
+                <action android:name="Pedido" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andre.activitys.Carrinho"
+            android:label="@string/title_activity_carrinho" >
+            <intent-filter>
+                <action android:name="Carrinho" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andre.activitys.ProdutoCarrinho"
+            android:label="@string/title_activity_produto_carrinho" >
+            <intent-filter>
+                <action android:name="ProdutoCarrinho" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andre.activitys.Finalizar"
+            android:label="@string/title_activity_finalizar" >
+            <intent-filter>
+                <action android:name="Finalizar" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andre.activitys.DadosCliente"
+            android:label="@string/title_activity_dados_cliente" >
+            <intent-filter>
+                <action android:name="DadosCliente" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andre.activitys.MudarIP"
+            android:label="@string/title_activity_mudar_ip" >
+            <intent-filter>
+                <action android:name="MudarIP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

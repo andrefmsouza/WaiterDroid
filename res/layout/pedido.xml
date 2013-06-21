@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btVoltar"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="voltar"
+        android:text="@string/btVoltar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btVoltar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvNomePedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Nome"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrecoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNomePedido"
+                android:layout_marginTop="10dp"
+                android:text="Preço: R$ 00,00"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvDescricaoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvPrecoPedido"
+                android:layout_marginTop="10dp"
+                android:text="Descrição do Pedido"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etQuantPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvDescricaoPedido"
+                android:layout_marginTop="30dp"
+                android:layout_toLeftOf="@+id/btAddProduto"
+                android:hint="@string/etQuantPedido"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btAddProduto"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/etQuantPedido"
+                android:onClick="adicionar"
+                android:text="@string/btAddProduto" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

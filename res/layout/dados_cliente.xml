@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/tbVoltarDados"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="voltar"
+        android:text="@string/btVoltar" />
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="enviar"
+        android:text="@string/btEnviar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btEnviar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tvLoginDadoslb"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/tvLogin" />
+
+            <TextView
+                android:id="@+id/tvSenhaDados"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvLoginDadoslb"
+                android:layout_marginTop="20dp"
+                android:text="@string/tvSenha" />
+
+            <EditText
+                android:id="@+id/etSenhaDados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvSenhaDados"
+                android:layout_alignBottom="@+id/tvSenhaDados"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tvSenhaDados"
+                android:inputType="textPassword" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/etMesaDados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvMesaDados"
+                android:layout_alignLeft="@+id/etSenhaDados"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tvMesaDados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/etSenhaDados"
+                android:layout_marginTop="40dp"
+                android:text="@string/tvMesa" />
+
+            <TextView
+                android:id="@+id/tvLoginDados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvSenhaDados"
+                android:layout_alignLeft="@+id/etSenhaDados"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
